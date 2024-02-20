@@ -7,4 +7,16 @@
   --flashwhite-color: #f1f2f6;
   --white-color: #ffffff;
   --dark-color: #212121;
+
+  --primary-font: 'Monsterrat', sans-serif;
+  --second-font: 'Monsterrat', sans-serif;
+  --fs14: 14px;
+  --fw600: 600;
+
+  --transition-color: color .3s;
+  --transition-background: background-color .3s;
+  --transition-color: color .3s;
+  --transition-color: color .3s;
+  --transition-color: color .3s;
+
 }
