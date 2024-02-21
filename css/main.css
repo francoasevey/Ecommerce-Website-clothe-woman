@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=');
+@import url('https://fonts.googleapis.com/css2?family=Prata:wght@400&family=Montserrat:wght@400;500;600;700;');
 :root{
   --primary-color: #2bcbba;
   --light-color: #d1d8e0;
@@ -8,15 +8,35 @@
   --white-color: #ffffff;
   --dark-color: #212121;
 
-  --primary-font: 'Monsterrat', sans-serif;
-  --second-font: 'Monsterrat', sans-serif;
+  --primary-font: 'Montserrat', sans-serif;
+  --second-font: 'Prata', serif;
   --fs14: 14px;
   --fw600: 600;
 
   --transition-color: color .3s;
   --transition-background: background-color .3s;
-  --transition-color: color .3s;
-  --transition-color: color .3s;
-  --transition-color: color .3s;
+  --transition-border: border .3s;
+  --transition-transform: transform .3s;
 
+  --shadow: 0px 10px 20px 0px rgb( 0 0 0 / 20%);
+
+}
+html{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--primary-font);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.8;
+  color: var(--dark-color);
+  background-color: var(--white-color);
 }
