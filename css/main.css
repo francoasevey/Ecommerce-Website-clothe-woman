@@ -95,9 +95,19 @@ h4{
   margin: 0 auto;
 }
 /*===============================HEADER====================================*/
-.inner-header .wrap{
+.inner-header :where(.wrap, .menu > ul),
+.list-inline > ul{
   display: flex;
   align-items: center;
+}
+.header-left, .header-right{
+  flex-grow: 1;
+}
+.header-center nav{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 180px;
+  max-width: 720px;
 }
 /*===============================STYLES====================================*/
 /*===============================STYLES====================================*/
