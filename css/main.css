@@ -62,3 +62,29 @@ input,textarea,select{
 input[type=checkbox],input[type=radio]{
   width: auto;
 }
+input::placeholder, textarea::placeholder{
+  color: inherit;
+}
+button{
+  font: inherit;
+}
+strong{
+  font-weight: var(--fw600);
+}
+h1,h2,h3,h4{
+  font-family: var(--second-font);
+  font-weight: 400;
+  line-height: normal;
+}
+h1{
+  font-size: 2.75em;
+}
+h2{
+  font-size: 2.5em;
+}
+h3{
+  font-size: 2em;
+}
+h4{
+  font-size: 1em;
+}
