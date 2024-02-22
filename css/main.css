@@ -148,6 +148,8 @@ h4{
   font-weight: var(--fw600);
   text-transform: uppercase;
   padding: 0 15px;
+  display: flex;
+  gap: 5px;
 }
 .header-right ul{
   justify-content: flex-end;
