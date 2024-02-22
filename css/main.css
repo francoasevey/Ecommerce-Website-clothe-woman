@@ -166,6 +166,11 @@ h4{
 .header-left .list-inline{
   display: none;
 }
+:where(.header-left, .header-right) li{
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
