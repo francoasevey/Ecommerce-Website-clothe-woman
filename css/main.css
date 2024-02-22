@@ -94,6 +94,21 @@ h4{
   padding: 0 var(--gutter, 15px);
   margin: 0 auto;
 }
+.item-floating{
+  position: absolute;
+  font-size: 10px;
+  font-weight: var(--fw600);
+  top: -8px;
+  right: 0;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
 /*===============================HEADER====================================*/
 .inner-header{
   line-height: 80px;
@@ -136,6 +151,17 @@ h4{
 }
 .header-right ul{
   justify-content: flex-end;
+}
+.list-inline a{
+  position: relative;
+  font-size: 24px;
+  padding: 0 10px;
+  line-height: 1;
+  display: flex;
+  transition: var(--transition-color);
+}
+.list-inline a:hover{
+  color: var(--light-color);
 }
 @media (min-width: 992px) {
   .menu-trigger{
