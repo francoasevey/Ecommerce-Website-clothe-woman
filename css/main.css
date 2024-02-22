@@ -104,10 +104,13 @@ h4{
   color: var(--white-color);
   width: 20px;
   height: 20px;
+  border-radius: 50%;
+}
+/*================================GROUP SELECTOR==================================*/
+.item-floating, .header-center .branding{
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 50%;
 }
 /*===============================HEADER====================================*/
 .inner-header{
@@ -132,9 +135,6 @@ h4{
   left: 0;
   right: 0;
   top: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   pointer-events: none;
 }
 .header-center .branding a{
