@@ -125,7 +125,7 @@ h4{
   flex-grow: 1;
 }
 .header-center nav{
-  display: grid;
+  display: none;
   grid-template-columns: 1fr 1fr;
   gap: 180px;
   max-width: 720px;
@@ -152,7 +152,7 @@ h4{
 .header-right ul{
   justify-content: flex-end;
 }
-.list-inline a{
+.list-inline a, .menu-trigger{
   position: relative;
   font-size: 24px;
   padding: 0 10px;
@@ -163,9 +163,18 @@ h4{
 .list-inline a:hover{
   color: var(--light-color);
 }
+.header-left .list-inline{
+  display: none;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
+  }
+  .header-center nav{
+    display: grid;
+  }
+  .header-left .list-inline{
+    display: block;
   }
 }
 /*===============================STYLES====================================*/
