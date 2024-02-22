@@ -183,6 +183,14 @@ h4{
   .header-left .list-inline{
     display: block;
   }
+  nav.menu .sub-menu{
+    position: absolute;
+    top: auto;
+    line-height: initial;
+    background-color: var(--white-color);
+    box-shadow: var(--shadow);
+    z-index: 1000;
+  }
 }
 /*===============================STYLES====================================*/
 /*===============================STYLES====================================*/
