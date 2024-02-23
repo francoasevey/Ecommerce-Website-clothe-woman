@@ -8,7 +8,7 @@
   --white-color: #ffffff;
   --dark-color: #212121;
 
-  --primary-font: 'Montserrat', sans-serif;
+  --primary-font: 'Monstserrat', sans-serif;
   --second-font: 'Prata', serif;
   --fs14: 14px;
   --fw600: 600;
@@ -19,6 +19,7 @@
   --transition-transform: transform .3s;
 
   --shadow: 0px 10px 20px 0px rgb( 0 0 0 / 20%);
+  --fade: fade-bottom .3s cubic-bezier(0.39, 0.575, .0565, 1) both;
 
 }
 html{
@@ -140,7 +141,16 @@ h4{
   width: 8px;
   height: 8px;
 }
-
+@keyframes fade-bottom {
+  0%{
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /*===============================HEADER====================================*/
 .inner-header{
   line-height: 80px;
@@ -220,6 +230,7 @@ h4{
     box-shadow: var(--shadow);
     z-index: 1000;
     display: none;
+    animation: var(--fade);
   }
   nav.menu li:hover .sub-menu{
     display: block;
