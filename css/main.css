@@ -236,7 +236,7 @@ h4{
     display: block;
   }
   nav.menu .sub-menu{
-    display: block;
+    padding: 10px 0;
   }
   nav.menu .sub-menu li{
     padding: 5px 30px;
