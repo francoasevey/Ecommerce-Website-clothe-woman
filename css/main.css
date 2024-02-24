@@ -219,6 +219,17 @@ h4{
   grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-col), 100%), 1fr));
   gap: var(--gutter, 30px);
 }
+.dotgrid .dot-image{
+  position: relative;
+  margin-bottom: 15px;
+}
+.dotgrid .dot-image > a, .dotgrid .thumbnail.hover{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
