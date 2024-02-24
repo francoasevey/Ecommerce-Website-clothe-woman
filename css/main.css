@@ -222,7 +222,13 @@ h4{
   .header-left .list-inline{
     display: block;
   }
-  nav.menu .sub-menu{
+  nav.menu .sub-mega{
+    left: 0;
+    right: 0;
+    padding: 50px 0;
+    display: block;
+  }
+  nav.menu :where(.sub-menu, .sub-mega){
     position: absolute;
     top: auto;
     line-height: initial;
@@ -232,7 +238,7 @@ h4{
     display: none;
     animation: var(--fade);
   }
-  nav.menu li:hover .sub-menu{
+  nav.menu li:hover :where(.sub-menu, .sub-mega){
     display: block;
   }
   nav.menu .sub-menu{
