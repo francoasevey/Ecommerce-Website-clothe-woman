@@ -151,6 +151,19 @@ h4{
     opacity: 1;
   }
 }
+
+.dot-title{
+  font-family: var(--primary-font);
+  font-size: var(--fs14);
+  font-weight: var(--fw600);
+  line-height: 34px;
+}
+.dot-title a{
+  transition: var(--transition-color);
+}
+.dot-title a:hover, .dotgrid .product-price .before{
+  color: var(--light-color);
+}
 /*===============================HEADER====================================*/
 .inner-header{
   line-height: 80px;
@@ -286,6 +299,12 @@ h4{
   font-weight: var(--fw600);
   background-color: var(--primary-color);
   color: var(--white-color);
+}
+.dotgrid .dot-info{
+  text-align: center;
+}
+.dotgrid .product-price .before{
+  text-decoration: line-through;
 }
 @media (min-width: 992px) {
   .menu-trigger{
