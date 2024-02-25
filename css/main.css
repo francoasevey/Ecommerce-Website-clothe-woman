@@ -222,9 +222,9 @@ h4{
 .dotgrid .dot-image{
   position: relative;
   margin-bottom: 15px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
-.dotgrid .dot-image > a, .dotgrid .thumbnail.hover{
+.dotgrid .dot-image > a, .dotgrid .thumbnail.hover, .dotgrid .actions{
   position: absolute;
   top: 0;
   left: 0;
@@ -244,6 +244,38 @@ h4{
 .dotgrid .dot-image:hover .thumbnail.hover{
   opacity: 1;
   transform: scale3d(1.1,1.1,1.1) translateZ(0);
+}
+.dotgrid .actions{
+  z-index: 2;
+  top: auto;
+  bottom: 20px;
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+  transition: all .3s cubic-bezier(0,0,.2,1);
+}
+.dot-image:hover .actions{
+  opacity: 1;
+  transform: translateZ(0);
+}
+.dotgrid .actions ul{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.dotgrid .actions ul li a{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transition: var(--transition-background), var(--transition-color);
+}
+.dotgrid .actions ul li a:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
 }
 @media (min-width: 992px) {
   .menu-trigger{
