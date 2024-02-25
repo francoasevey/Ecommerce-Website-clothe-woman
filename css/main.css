@@ -222,9 +222,9 @@ h4{
 .dotgrid .dot-image{
   position: relative;
   margin-bottom: 15px;
-  /*overflow: hidden;*/
+  overflow: hidden;
 }
-.dotgrid .dot-image > a, .dotgrid .thumbnail.hover, .dotgrid .actions{
+.dotgrid .dot-image > a, .dotgrid .thumbnail.hover, .dotgrid .actions, .dotgrid .dot-image .label{
   position: absolute;
   top: 0;
   left: 0;
@@ -257,12 +257,12 @@ h4{
   opacity: 1;
   transform: translateZ(0);
 }
-.dotgrid .actions ul{
+.dotgrid .actions ul, .dotgrid .dot-image .label{
   display: flex;
   justify-content: center;
   gap: 10px;
 }
-.dotgrid .actions ul li a{
+.dotgrid .actions ul li a, .dotgrid .dot-image .label span {
   font-size: 20px;
   display: flex;
   align-items: center;
@@ -275,6 +275,16 @@ h4{
 }
 .dotgrid .actions ul li a:hover{
   background-color: var(--dark-color);
+  color: var(--white-color);
+}
+.dotgrid .dot-image .label{
+  top: auto;
+  bottom: 20px;
+}
+.dotgrid .dot-image .label span{
+  font-size: 12px;
+  font-weight: var(--fw600);
+  background-color: var(--primary-color);
   color: var(--white-color);
 }
 @media (min-width: 992px) {
