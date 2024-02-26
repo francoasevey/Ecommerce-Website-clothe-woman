@@ -306,6 +306,17 @@ h4{
 .dotgrid .product-price .before{
   text-decoration: line-through;
 }
+/*===============================INNER====================================*/
+.inner-header .search-float{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  height: 80px;
+  background-color: var(--white-color);
+  z-index: 1000;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
