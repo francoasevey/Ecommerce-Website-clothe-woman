@@ -316,6 +316,16 @@ h4{
   .header-left .list-inline{
     display: block;
   }
+  .mega-content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 60px;
+  }
+  .mega-content .links{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+    gap: 15px;
+  }
   nav.menu .sub-mega{
     left: 0;
     right: 0;
