@@ -317,6 +317,18 @@ h4{
   background-color: var(--white-color);
   z-index: 1000;
 }
+form.search{
+  position: relative;
+}
+form.search :where(i){
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+form.search .input{
+  outline: 0;
+  padding: 15px 50px;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
