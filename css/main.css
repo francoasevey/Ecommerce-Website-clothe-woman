@@ -316,6 +316,7 @@ h4{
   height: 80px;
   background-color: var(--white-color);
   z-index: 1000;
+  display: none;
 }
 form.search{
   position: relative;
