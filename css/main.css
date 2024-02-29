@@ -349,6 +349,9 @@ form.search :where(i:last-child){
   height: 80px;
   font-size: 18px;
 }
+.search-float.active{
+  display: block;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
