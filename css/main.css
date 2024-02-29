@@ -329,6 +329,25 @@ form.search .input{
   outline: 0;
   padding: 15px 50px;
 }
+form.search i{
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 100%;
+  cursor: pointer;
+}
+form.search :where(i:last-child){
+  left: auto;
+  right: 0;
+}
+.inner-header .search .input{
+  display: flex;
+  border: 0;
+  height: 80px;
+  font-size: 18px;
+}
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
