@@ -164,7 +164,7 @@ h4{
 .dot-title a:hover, .dotgrid .product-price .before{
   color: var(--light-color);
 }
-.overlay{
+.overlay, .mobile-menu{
   position: fixed;
   top: 0;
   left: 0;
@@ -372,6 +372,8 @@ form.search :where(i:last-child){
 .search-float.active{
   display: block;
 }
+/*===============================MOBILE====================================*/
+
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
@@ -417,6 +419,7 @@ form.search :where(i:last-child){
     padding: 5px 30px;
   }
 }
+/*===============================MEDIAS====================================*/
 @media (min-width: 1200px) {
   .container.wide{
     --mx-width: 1720px;
