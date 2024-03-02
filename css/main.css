@@ -226,7 +226,7 @@ h4{
 .header-right ul{
   justify-content: flex-end;
 }
-.list-inline a, .menu-trigger{
+.list-inline a, .menu-trigger, .close-trigger{
   position: relative;
   font-size: 24px;
   padding: 0 10px;
@@ -395,6 +395,24 @@ form.search :where(i:last-child){
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.mobile-menu .main-menu{
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+.mobile-menu nav > ul{
+  padding: 20px 0;
+}
+.mobile-menu nav > ul > li > a{
+  position: relative;
+  padding: 12px 0;
+  font-weight: 500;
+  transition: var(--transition-color);
+}
+.mobile-menu nav > ul > li > a:hover{
+  color: var(--grey-color);
 }
 
 @media (min-width: 992px) {
