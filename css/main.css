@@ -423,6 +423,19 @@ form.search :where(i:last-child){
   right: 0;
   top: 50%;
   transform: translateY(-50%);
+  border-radius: 50%;
+  transition: var(--transition-background);
+  z-index: 1;
+}
+.mobile-menu .child-trigger:hover{
+  background-color: var(--light-color);
+}
+.mobile-menu nav .sub-menu{
+  padding-left: 15px;
+  max-width: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transition: .3s ease-in-out;
 }
 
 @media (min-width: 992px) {
