@@ -411,8 +411,18 @@ form.search :where(i:last-child){
   font-weight: 500;
   transition: var(--transition-color);
 }
+.mobile-menu nav li :where(li, a){
+  display: block;
+}
 .mobile-menu nav > ul > li > a:hover{
   color: var(--grey-color);
+}
+.mobile-menu .child-trigger{
+  color: var(--dark-color);
+  font-size: 20px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media (min-width: 992px) {
