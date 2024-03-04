@@ -124,9 +124,14 @@ h4{
 .primary-btn, .secondary-btn{
   border-color: var(--dark-color);
 }
-.primary-btn:hover{
+.primary-btn:hover, .secondary-btn{
   background-color: var(--dark-color);
   color: var(--white-color);
+}
+.secondary-btn:hover{
+  background-color: transparent;
+  border-color: var(--dark-color);
+  color: var(--dark-color);
 }
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
