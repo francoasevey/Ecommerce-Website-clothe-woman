@@ -402,6 +402,8 @@ form.search :where(i:last-child){
 .mobile-menu{
   z-index: 1001;
   pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
 }
 .mobile-menu .wrap{
   position: relative;
@@ -466,6 +468,15 @@ form.search :where(i:last-child){
 .mobile-menu nav li.active .sub-menu{
   max-height: 1000px;
   visibility: visible;
+}
+.mobile-menu .button{
+  margin-top: auto;
+  padding: 20px 0 40px;
+  text-align: center;
+}
+.mobile-menu .button a{
+  display: block;
+  margin-top: 10px;
 }
 
 @media (min-width: 992px) {
