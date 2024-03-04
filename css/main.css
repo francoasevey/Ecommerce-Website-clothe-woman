@@ -405,6 +405,10 @@ form.search :where(i:last-child){
   visibility: hidden;
   opacity: 0;
 }
+.mobile-menu.active{
+  visibility: visible;
+  opacity: 1;
+}
 .mobile-menu .wrap{
   position: relative;
   max-width: calc(100% - 40px);
@@ -412,8 +416,13 @@ form.search :where(i:last-child){
   height: 100%;
   background-color: var(--white-color);
   pointer-events: auto;
+  transform: translateX(var(--transX, -100%));
+  transition: var(--transition-transform);
 }
-.mobile-menu .close-trigger{
+.mobile-menu.active .wrap{
+  transform: translateX(0);
+}
+.mobile-menu .close-trigger, .mobile-menu .child-trigger{
   position: absolute;
   top: 0;
   right: -40px;
