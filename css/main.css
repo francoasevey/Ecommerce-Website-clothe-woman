@@ -210,6 +210,27 @@ h4{
   visibility: visible;
   pointer-events: all;
 }
+.scrollto > .wrapper{
+  overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: inline mandatory;
+}
+.scrollto .wrapper::-webkit-scrollbar{
+  width: 12px;
+  height: 12px;
+}
+.scrollto .wrapper::-webkit-scrollbar-thumb{
+  --border-color: var(var(--white-color));
+  background-color: var(--light-color);
+  border: 3px solid var(--border-color);
+  border-radius: 20px;
+}
+.scrollto .wrapper:hover::-webkit-scrollbar-thumb{
+  background-color: var(--grey-color);
+}
+.scrollto .wrapper::-webkit-scrollbar-thumb:hover{
+  background-color: var(--grey-color);
+}
 /*===============================HEADER====================================*/
 .inner-header{
   line-height: 80px;
@@ -260,7 +281,7 @@ h4{
   display: flex;
   transition: var(--transition-color);
 }
-.list-inline a:hover{
+.list-inline a:hover, .menu-trigger:hover{
   color: var(--light-color);
 }
 .header-left .list-inline{
@@ -428,7 +449,7 @@ form.search :where(i:last-child){
   right: -40px;
   width: 40px;
   height: 40px;
-  color: var(--primary-color);
+  color: var(--white-color);
   display: flex;
   align-items: center;
   justify-content: center;
