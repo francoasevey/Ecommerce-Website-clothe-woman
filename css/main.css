@@ -107,6 +107,27 @@ h4{
   height: 20px;
   border-radius: 50%;
 }
+
+.button > [class*=-btn]{
+  font-size: var(--fs14);
+  font-weight: var(--fw600);
+  text-transform: uppercase;
+  padding: 0 30px;
+  display: inline-block;
+  line-height: 42px;
+  border-width: 2px;
+  border-style: solid;
+  transition: var(--transition-background)
+  , var(--transition-color)
+  , var(--transition-border);
+}
+.primary-btn, .secondary-btn{
+  border-color: var(--dark-color);
+}
+.primary-btn:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
   display: flex;
@@ -432,10 +453,14 @@ form.search :where(i:last-child){
 }
 .mobile-menu nav .sub-menu{
   padding-left: 15px;
-  max-width: 0;
+  max-height: 0;
   overflow: hidden;
   visibility: hidden;
   transition: .3s ease-in-out;
+}
+.mobile-menu nav li.active .sub-menu{
+  max-height: 1000px;
+  visibility: visible;
 }
 
 @media (min-width: 992px) {
