@@ -531,6 +531,12 @@ form.search :where(i:last-child){
   right: 0;
   background-color: transparent;
 }
+@media (min-width: 1200px) {
+  .container.wide{
+    --mx-width: 1720px;
+    --gutter: 40px;
+  }
+}
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
