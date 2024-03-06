@@ -508,7 +508,7 @@ form.search :where(i:last-child){
   display: block;
   margin-top: 10px;
 }
-/*===============================MAIN SLIDER====================================*/
+/*===============================MAIN SLIDER FIX THIS====================================*/
 .slider :where(.image, .ob-cover){
   position: relative;
 }
