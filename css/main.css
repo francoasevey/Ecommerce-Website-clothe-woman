@@ -521,6 +521,16 @@ form.search :where(i:last-child){
   width: 100%;
   object-fit: cover;
 }
+.slider .ob-cover{
+  height: calc(100vh - 80);
+}
+.slider .title-info{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
+}
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
