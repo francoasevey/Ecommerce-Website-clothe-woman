@@ -521,6 +521,15 @@ form.search :where(i:last-child){
   width: 100%;
   object-fit: cover;
 }
+.slider .title-info .wrap{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 5vw;
+  max-width: 600px;
+  margin: 0 auto;
+}
 .slider .ob-cover{
   height: calc(100vh - 80);
 }
