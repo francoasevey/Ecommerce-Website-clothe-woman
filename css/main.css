@@ -133,6 +133,9 @@ h4{
   border-color: var(--dark-color);
   color: var(--dark-color);
 }
+.title{
+  font-size: clamp(30px, -0.875em + 8.333vw, var(--fs-max, 40px));
+}
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
   display: flex;
