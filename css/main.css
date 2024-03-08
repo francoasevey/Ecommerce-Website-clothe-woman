@@ -524,15 +524,6 @@ form.search :where(i:last-child){
   width: 100%;
   object-fit: cover;
 }
-.slider .title-info .wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-  padding-bottom: 5vw;
-  max-width: 600px;
-  margin: 0 auto;
-}
 .slider .ob-cover{
   height: calc(100vh - 80);
 }
@@ -551,6 +542,20 @@ form.search :where(i:last-child){
   padding-bottom: 5vw;
   max-width: 600px;
   margin: 0 auto;
+}
+
+.slider .title-info .price{
+  position: relative;
+  font-size: 30px;
+  width: 80px;
+  height: 80px;
+  margin-top: -40px;
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
 }
 @media (min-width: 1200px) {
   .container.wide{
