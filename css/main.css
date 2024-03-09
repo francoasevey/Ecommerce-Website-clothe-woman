@@ -621,11 +621,26 @@ form.search :where(i:last-child){
   nav.menu .sub-menu li{
     padding: 5px 30px;
   }
+  .slider .ob-cover{
+    height: calc(100vh - 80px);
+  }
   .slider .title-info{
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 0; 
+    background-color: transparent;
+  }
+  .slider h3{
+    --fs-max: 80px;
+    color: var(--white-color);
+  }
+  .slider .button a{
+    border-color: var(--white-color);
+    color: var(--white-color);
+  }
+  .slider .button a:hover{
+    border-color: var(--dark-color);
   }
 }
 
