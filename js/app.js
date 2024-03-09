@@ -30,6 +30,8 @@ submenu.forEach((menu) => menu.addEventListener('click', function(e) {
 
 const swiper = new Swiper('.sliderbox', {
   loop: true,
+  effect: 'fade',
+  autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
   },
