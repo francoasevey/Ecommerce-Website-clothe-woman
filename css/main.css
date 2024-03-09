@@ -534,6 +534,9 @@ form.search :where(i:last-child){
   right: 0;
   background-color: transparent;
 }
+.slider .title-info{
+  background-color: var(--white-color);
+}
 .slider .title-info .wrap{
   display: flex;
   flex-direction: column;
@@ -542,6 +545,7 @@ form.search :where(i:last-child){
   padding-bottom: 5vw;
   max-width: 600px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .slider .title-info .price{
