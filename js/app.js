@@ -27,3 +27,10 @@ submenu.forEach((menu) => menu.addEventListener('click', function(e) {
     this.closest('.has-child').classList.toggle('active');
   }
 }));
+
+const swiper = new Swiper('.sliderbox', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+})
