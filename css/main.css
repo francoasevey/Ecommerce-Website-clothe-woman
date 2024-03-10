@@ -593,6 +593,22 @@ form.search :where(i:last-child){
   transform: translate(-50% -50%);
   transition: width .2s height .2s, transform .2s;
 }
+.custom-pagination .swiper-pagination-bullet-active::before{
+  background-color: transparent;
+  width: 15px;
+  height: 15px;
+}
+.slider .title-info :where(span, h3, .button){
+  transform: translateY(30px);
+  opacity: 0;
+  visibility: hidden;
+  transition: transform .75s, opacity .75s, visibility .75s;
+}
+.slider .swiper-slide-active .title-info :where(span, h3, .button){
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+}
 @media (min-width: 1200px) {
   .container.wide{
     --mx-width: 1720px;
