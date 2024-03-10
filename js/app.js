@@ -34,5 +34,6 @@ const swiper = new Swiper('.sliderbox', {
   autoHeight: true,
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 })
