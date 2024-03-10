@@ -561,6 +561,18 @@ form.search :where(i:last-child){
   justify-content: center;
   border-radius: 50%;
 }
+.slider .custom-pagination{
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  bottom: 50%;
+}
+.slider .custom-pagination .swiper-pagination{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 @media (min-width: 1200px) {
   .container.wide{
     --mx-width: 1720px;
