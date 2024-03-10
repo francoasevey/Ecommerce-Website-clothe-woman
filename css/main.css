@@ -609,6 +609,12 @@ form.search :where(i:last-child){
   opacity: 1;
   visibility: visible;
 }
+.slider .swiper-slide-active .title-info h3{
+  transition-delay: .5s;
+}
+.slider .swiper-slide-active .title-info .button{
+  transition-delay: .75s;
+}
 @media (min-width: 1200px) {
   .container.wide{
     --mx-width: 1720px;
