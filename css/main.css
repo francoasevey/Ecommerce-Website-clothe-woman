@@ -698,6 +698,9 @@ main > div .heading{
   background-color: var(--dark-color);
   border-color: var(--dark-color);
 }
+.carousel .nav .swiper-button-disabled{
+  opacity: 0;
+}
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
@@ -774,6 +777,11 @@ main > div .heading{
 
 
 /*===============================MEDIAS====================================*/
+@media (max-width: 480px) {
+  .carousel .dotgrid .item{
+    width: 270px;
+  }
+}
 @media (min-width: 1200px) {
   .container.wide{
     --mx-width: 1720px;
@@ -783,6 +791,17 @@ main > div .heading{
 @media (min-width: 1400px) {
   .mega-content{
     grid-template-columns: 1fr 1fr;
+  }
+  .carousel .inner-wrapper{
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  .carousel .nav > .swiper-button-next{
+    right: -40px;
+  }
+  .carousel .nav > .swiper-button-prev{
+    left: -40px;
   }
 }
 /*===============================STYLES====================================*/
