@@ -136,6 +136,9 @@ h4{
 .title{
   font-size: clamp(30px, -0.875em + 8.333vw, var(--fs-max, 40px));
 }
+.grey-color{
+  color: var(--grey-color);
+}
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
   display: flex;
@@ -214,6 +217,8 @@ h4{
   pointer-events: all;
 }
 .scrollto > .wrapper{
+  display: flex;
+  padding-bottom: 20px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
   scroll-snap-type: inline mandatory;
@@ -627,9 +632,39 @@ form.search :where(i:last-child){
   }
 }
 /*===============================GUIDE====================================*/
+.guide{
+  background-color: var(--flashwhite-color);
+}
+main > div .heading{
+  text-align: center;
+  margin-bottom: 60px;
+}
+.guide .dotgrid .wrapper{
+  --grid-col: 260px;
+}
+
 :is(.guide) .dot-image .thumbnail{
   position: relative;
   opacity: unset;
+}
+.guide .dot-image .thumbnail img{
+  width: 100%;
+}
+.guide .dot-title{
+  --fs14: 18px;
+  --fw600: 400;
+  padding: 10px 0;
+}
+.guide .dot-info p{
+  line-height: 1.4;
+}
+.guide .wrapper .item{
+  width: 290px;
+  scroll-snap-align: start;
+  flex-shrink: 0;
+}
+.guide .scrollto .wrapper::-webkit-scrollbar-thumb{
+  --border-color: #f0f9f8;
 }
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
