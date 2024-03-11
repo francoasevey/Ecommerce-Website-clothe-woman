@@ -632,6 +632,9 @@ form.search :where(i:last-child){
   }
 }
 /*===============================GUIDE====================================*/
+.page-home main > div:not(.slider){
+  padding: 100px 0;
+}
 .guide{
   background-color: var(--flashwhite-color);
 }
