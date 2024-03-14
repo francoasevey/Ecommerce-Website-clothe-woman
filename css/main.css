@@ -646,11 +646,11 @@ main > div .heading{
   --grid-col: 260px;
 }
 
-:is(.guide) .dot-image .thumbnail{
+:is(.guide, .fromblog) .dot-image .thumbnail{
   position: relative;
   opacity: unset;
 }
-.guide .dot-image .thumbnail img{
+:is(.guide, .fromblog) .dot-image .thumbnail img{
   width: 100%;
 }
 .guide .dot-title{
@@ -775,12 +775,35 @@ main > div .heading{
 .banner h3{
   --fs-max: 80px;
 }
+/*===============================FROMBLOG====================================*/
+.fromblog .dot-title{
+  --primary-font: var(--second-font);
+  --fs14: 18px;
+  --fw600: 400;
+  margin-top: 15px;
+}
+.fromblog .dot-info > a{
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  border: 1px solid var(--light-color);
+  color: var(--grey-color);
+  padding: 1px 10px;
+  transition: var(--transition-background),
+  var(--transition-color),
+  var(--transition-border);
+}
+.fromblog .dot-info > a:hover{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border-color: var(--dark-color);
+}
+
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
   }
 }
-/*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
