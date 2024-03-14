@@ -772,6 +772,9 @@ main > div .heading{
   font-size: var(--fs14);
   text-transform: uppercase;
 }
+.banner h3{
+  --fs-max: 80px;
+}
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
