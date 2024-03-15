@@ -798,13 +798,18 @@ main > div .heading{
   color: var(--white-color);
   border-color: var(--dark-color);
 }
+.fromblog .button{
+  text-align: center;
+  margin-top: 40px;
+}
+/*===============================INSTAGRAM====================================*/
+
 
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
   }
 }
-/*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
