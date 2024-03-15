@@ -228,7 +228,7 @@ h4{
   height: 12px;
 }
 .scrollto .wrapper::-webkit-scrollbar-thumb{
-  --border-color: var(var(--white-color));
+  --border-color: var(--white-color);
   background-color: var(--light-color);
   border: 3px solid var(--border-color);
   border-radius: 20px;
@@ -661,8 +661,8 @@ main > div .heading{
 .guide .dot-info p{
   line-height: 1.4;
 }
-.guide .wrapper .item{
-  width: 290px;
+.scrollto .wrapper .item{
+  width: 290px !important;
   scroll-snap-align: start;
   flex-shrink: 0;
 }
@@ -872,6 +872,16 @@ main > div .heading{
   }
   .slider .button a:hover{
     border-color: var(--dark-color);
+  }
+  .scrollto .wrapper{
+    --display: grid;
+    padding: 0;
+    overflow: unset;
+    scroll-snap-type: unset;
+    overscroll-behavior-inline: unset;
+  }
+  .scrollto .wrapper .item{
+    width: unset;
   }
 }
 
