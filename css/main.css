@@ -832,7 +832,7 @@ main > div .heading{
   --gutter: 0;
 }
 .frominsta .dotgrid .wrapper{
-  background-color: var(--light-color);
+  background-color: var(--flashwhite-color);
 }
 .frominsta img{
   width: 100%;
@@ -853,7 +853,7 @@ main > div .heading{
   pointer-events: none;
 }
 .frominsta .scrollto .wrapper::-webkit-scrollbar-thumb{
-  --border-color: var(--light-color);
+  --border-color: var(--flashwhite-color);
   background-color: var(--grey-color);
 }
 /*===============================FOOTER====================================*/
@@ -883,6 +883,10 @@ main > div .heading{
 .inner-footer .search .input{
   font-size: var(--fs14);
   border: 2px solid var(--dark-color);
+}
+.inner-footer .bottom{
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 /*===============================DOT PRODUCT====================================*/
 /*===============================DOT PRODUCT====================================*/
@@ -965,6 +969,9 @@ main > div .heading{
   }
   .scrollto .wrapper .item{
     width: unset;
+  }
+  .inner-footer .wrap > div{
+    flex-flow: nowrap;
   }
 }
 
