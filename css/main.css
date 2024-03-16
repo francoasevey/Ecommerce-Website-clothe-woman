@@ -632,7 +632,7 @@ form.search :where(i:last-child){
   }
 }
 /*===============================GUIDE====================================*/
-.page-home main > div:not(.slider){
+.page-home main > div:not(.slider, .frominsta){
   padding: 100px 0;
 }
 .guide{
@@ -828,7 +828,10 @@ main > div .heading{
   margin: 0 auto;
   pointer-events: none;
 }
-
+.frominsta .scrollto .wrapper::-webkit-scrollbar-thumb{
+  --border-color: var(--light-color);
+  background-color: var(--grey-color);
+}
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
