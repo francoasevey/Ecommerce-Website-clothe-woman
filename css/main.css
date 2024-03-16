@@ -632,7 +632,7 @@ form.search :where(i:last-child){
   }
 }
 /*===============================GUIDE====================================*/
-.page-home main > div:not(.slider, .frominsta){
+.page-home main > div:not(.slider, .frominsta), .inner-footer{
   padding: 100px 0;
 }
 .guide{
@@ -832,15 +832,31 @@ main > div .heading{
   --border-color: var(--light-color);
   background-color: var(--grey-color);
 }
+/*===============================FOOTER====================================*/
+.inner-footer{
+  background-color: var(--flashwhite-color);
+  line-height: 1.4;
+  padding-bottom: 30px;
+}
+.inner-footer .wrap > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 60px;
+}
+.inner-footer .subscribe{
+  width: 100%;
+}
+.inner-footer .top .subscribe h3{
+  margin-bottom: 20px;
+}
+/*===============================DOT PRODUCT====================================*/
+/*===============================DOT PRODUCT====================================*/
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
   }
 }
-/*===============================FOOTER====================================*/
-
-/*===============================DOT PRODUCT====================================*/
-/*===============================DOT PRODUCT====================================*/
 @media (min-width: 992px) {
   .menu-trigger{
     display: none;
