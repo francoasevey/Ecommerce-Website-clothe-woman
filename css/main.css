@@ -888,8 +888,33 @@ main > div .heading{
   padding-top: 40px;
   padding-bottom: 40px;
 }
+/*===============================BREADCRUMB====================================*/
+.breadcrumb{
+  width: 100%;
+  line-height: initial;
+  padding: 30p 0 50px;
+}
+.breadcrumb ul{
+  justify-content: center;
+}
+.breadcrumb ul li{
+  position: relative;
+  margin-right: 10px;
+}
+.breadcrumb ul li:not(:first-child){
+  padding-left: 25px;
+}
+.breadcrumb ul li:not(:first-child)::before{
+  content: '>';
+  position: absolute;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
 /*===============================DOT PRODUCT====================================*/
-/*===============================DOT PRODUCT====================================*/
+
+
+/*===============================MEDIAS====================================*/
 @media (min-width: 768px) {
   .banner{
     background-size: contain;
@@ -974,9 +999,6 @@ main > div .heading{
     flex-flow: nowrap;
   }
 }
-
-
-/*===============================MEDIAS====================================*/
 @media (max-width: 480px) {
   .carousel .dotgrid .item{
     width: 270px;
