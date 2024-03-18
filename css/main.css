@@ -931,8 +931,23 @@ main > div .heading{
 .product .main-image img{
   width: 100%;
 }
+.product .outer-thumb{
+  display: none;
+}
+.product .outer-thumb .item{
+  height: fit-content;
+  cursor: pointer;
+}
+.product .thumb-wrap{
+  position: relative;
+  width: 70px;
+  height: 90px;
+}
 
 @media (min-width: 481px) {
+  .product .wrapper{
+    --gutter: 60px;
+  }
   .product.dotgrid .image{
     position: relative;
     max-width: 500px;
