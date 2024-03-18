@@ -924,7 +924,33 @@ main > div .heading{
   overflow: hidden;
   text-overflow: ellipsis;
 }
-/*===============================DOT PRODUCT====================================*/
+/*===============================PRODUCT IMAGE====================================*/
+.product .wrapper{
+  --grid-col: 331px;
+}
+.product .main-image img{
+  width: 100%;
+}
+
+@media (min-width: 481px) {
+  .product.dotgrid .image{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  .product .outer-main{
+    width: calc(100% - 85px);
+    height: 100%;
+    margin: 0 0 0 85px;
+  }
+  .product .outer-thumb{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
 
 
 /*===============================MEDIAS====================================*/
