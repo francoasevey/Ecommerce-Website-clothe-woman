@@ -97,7 +97,7 @@ const carousel = new Swiper('.carouselbox', {
 });
 
 const thumbImage = new Swiper('.thumbnail-image', {
-  loop: true,
+  //loop: true,
   direction: 'vertical',
   spaceBetween: 15,
   slidesPerView: 1,
@@ -114,5 +114,5 @@ const mainImage = new Swiper('.main-image', {
   },
   thumbs: {
     swiper: thumbImage,
-  }
+  },
 });
