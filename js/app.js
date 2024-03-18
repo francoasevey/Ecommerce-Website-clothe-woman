@@ -104,3 +104,15 @@ const thumbImage = new Swiper('.thumbnail-image', {
   freeMode: true,
   watchSlideProgress: true,
 });
+
+const mainImage = new Swiper('.main-image', {
+  loop: true,
+  autoHeight: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  thumbs: {
+    swiper: thumbImage,
+  }
+});
