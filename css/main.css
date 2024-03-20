@@ -1032,7 +1032,9 @@ main > div .heading{
 .summary .wrap > button, .summary .qty button{
   width: 40px;
   height: 40px;
-  transition: box-shadow .3s;
+  transition: box-shadow .3s, var(--transition-border),
+  var(--transition-background),
+  var(--transition-color);
 }
 .summary .product-color button{
   border-radius: 50%;
@@ -1045,7 +1047,24 @@ main > div .heading{
 .summary .product-color button:hover:not(.selected){
   box-shadow: inset 0 0 0 4px var(--white-color);
 }
-
+.summary .product-size button{
+  font-size: var(--fs14);
+  line-height: 44px;
+  border: 1px solid var(--light-color);
+  border-radius: 5px;
+  background-color: transparent;
+}
+.summary .product-size button.selected{
+  background-color: var(--dark-color);
+  color: var(--white-color);
+  border-color: var(--dark-color);
+}
+.summary .product-size button:hover:not(.selected, [disabled]){
+  border-color: var(--dark-color);
+}
+.summary .product-size button:disabled{
+  pointer-events: none;
+}
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
