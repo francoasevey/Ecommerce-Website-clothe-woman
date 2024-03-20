@@ -1016,7 +1016,23 @@ main > div .heading{
 .summary .product-rating a:hover{
   color: var(--dark-color);
 }
-
+.summary .wrap:has(button){
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.summary button{
+  border-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+.summary .wrap > button{
+  width: 40px;
+  height: 40px;
+}
 
 /*===============================MEDIAS====================================*/
 
