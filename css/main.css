@@ -1065,7 +1065,7 @@ main > div .heading{
 .summary .product-size button:disabled{
   pointer-events: none;
 }
-.summary .product-stock .wrap{
+.summary .product-stock .wrap, .summary .product-control a{
   display: flex;
   gap: 5px;
 }
@@ -1119,6 +1119,32 @@ main > div .heading{
   align-items: flex-start;
   flex-flow: wrap;
   gap: 20px;
+}
+.summary .product-control span{
+  font-size: var(--fs14);
+}
+.summary .product-control a{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0;
+}
+.summary .product-control ul li:first-child a:hover i{
+  color: var(--red-color);
+}
+.summary .product-control .shipping li{
+  position: relative;
+  padding-left: 35px;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+.summary .product-control .shipping li i{
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  line-height: 1;
 }
 
 /*===============================MEDIAS====================================*/
