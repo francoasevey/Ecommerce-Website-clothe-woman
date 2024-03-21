@@ -1180,6 +1180,12 @@ main > div .heading{
   .banner{
     background-size: contain;
   }
+  .product.dotgrid .image{
+    max-width: 100%;
+    margin: 0;
+    position: sticky;
+    top: 30px;
+  }
 }
 @media (min-width: 992px) {
   .menu-trigger{
@@ -1285,6 +1291,19 @@ main > div .heading{
   }
   .carousel .nav > .swiper-button-prev{
     left: -40px;
+  }
+  .product .outer-main{
+    width: 100%;
+    margin: 0;
+  }
+  .product .image .outer-thumb{
+    position: absolute;
+    top: 0;
+    left: -100px;
+    height: 100%;
+  }
+  .product.dotgrid .image{
+    overflow: unset;
   }
 }
 /*===============================STYLES====================================*/
