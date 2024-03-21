@@ -1146,6 +1146,31 @@ main > div .heading{
   font-size: 24px;
   line-height: 1;
 }
+.product.detail{
+  padding-top: 30px;
+  margin: 70px 0;
+}
+.product nav{
+  position: relative;
+}
+.product nav::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 58px;
+  height: 2px;
+  width: 100%;
+  background-color: var(--light-color);
+}
+.product nav ul li a{
+  position: relative;
+  display: block;
+  font-size: 18px;
+  padding: 20px 0;
+  margin-right: 30px;
+  white-space: nowrap;
+  color: var(--grey-color);
+}
 
 /*===============================MEDIAS====================================*/
 
@@ -1185,6 +1210,9 @@ main > div .heading{
     margin: 0;
     position: sticky;
     top: 30px;
+  }
+  .product nav ul{
+    justify-content: center;
   }
 }
 @media (min-width: 992px) {
