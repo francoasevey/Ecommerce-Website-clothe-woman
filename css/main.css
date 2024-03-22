@@ -1210,7 +1210,14 @@ main > div .heading{
 .product .product-about h4{
   font-weight: var(--fw600);
 }
-
+.product .product-about ul{
+  margin-left: 20px;
+  list-style-type: disc;
+}
+.product.detail .dotgrid .wrapper{
+  --grid-col: 250px;
+  --gutter: 30px;
+}
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
