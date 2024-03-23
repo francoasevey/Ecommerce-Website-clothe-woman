@@ -979,7 +979,7 @@ main > div .heading{
   flex-direction: column;
   padding-left: 30px;
 }
-.summary .product-price .wrap::before{
+.summary .product-price .wrap::before, .product .head-review span::before{
   content: '';
   position: absolute;
   top: 0;
@@ -1223,6 +1223,27 @@ main > div .heading{
   font-weight: var(--fw600);
   text-align: center;
   color: var(--light-color);
+}
+.product .review{
+  max-width: 770px;
+}
+.product .review .head-review{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--light-color);
+}
+.product .review .head-review strong{
+  font-size: 50px;
+}
+.product .review .head-review span{
+  position: relative;
+  padding-left: 20px;
+}
+.product .head-review span::before{
+  height: 50px;
+  top: -30px;
 }
 /*===============================MEDIAS====================================*/
 
