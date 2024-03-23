@@ -1230,7 +1230,7 @@ main > div .heading{
 .product .review .head-review{
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 30px;
   border-bottom: 1px solid var(--light-color);
 }
@@ -1244,6 +1244,26 @@ main > div .heading{
 .product .head-review span::before{
   height: 50px;
   top: -30px;
+}
+.product .head-review .primary-btn{
+  border-width: 1px;
+  text-transform: unset;
+  font-weight: 500;
+}
+.product .profile .thumb-name{
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.product .profile .image{
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  margin-right: 20px;
+  overflow: hidden;
+}
+.product .profile .grouping{
+  line-height: inherit;
 }
 /*===============================MEDIAS====================================*/
 
