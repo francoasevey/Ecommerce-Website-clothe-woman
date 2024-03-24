@@ -1265,6 +1265,14 @@ main > div .heading{
 .product .profile .grouping{
   line-height: inherit;
 }
+.product .profile .name{
+  font-weight: var(--fw600);
+  margin-bottom: 5px;
+}
+.product .profile .date{
+  font-size: 12px;
+  margin-top: 8px;
+}
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
@@ -1292,6 +1300,9 @@ main > div .heading{
   }
   .custom-pagination{
     display: none;
+  }
+  .product .profile .comment{
+    padding-left: 92px;
   }
 }
 @media (min-width: 768px) {
