@@ -1196,6 +1196,10 @@ main > div .heading{
   padding: 50px 0;
   max-width: 980px;
   margin: 0 auto;
+  display: none;
+}
+.product .product-about.active{
+  display: block;
 }
 .product .product-about .text-block{
   padding-bottom: 30px;
