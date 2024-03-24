@@ -1273,6 +1273,9 @@ main > div .heading{
   font-size: 12px;
   margin-top: 8px;
 }
+.review .profile{
+  padding-bottom: 40px;
+}
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
