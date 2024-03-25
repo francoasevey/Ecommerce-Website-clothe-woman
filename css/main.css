@@ -196,7 +196,7 @@ h4{
 .dot-title a:hover, .dotgrid .product-price .before{
   color: var(--light-color);
 }
-.overlay, .mobile-menu{
+.overlay, .mobile-menu, .data-popup{
   position: fixed;
   top: 0;
   left: 0;
@@ -1281,6 +1281,18 @@ main > div .heading{
 .review .profile{
   padding-bottom: 40px;
 }
+/*===============================DATA POPUP====================================*/
+.data-popup{
+  z-index: 1001;
+  pointer-events: none;
+}
+.data-popup .wrap{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+/*===============================STYLES====================================*/
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
@@ -1446,6 +1458,5 @@ main > div .heading{
     overflow: unset;
   }
 }
-/*===============================STYLES====================================*/
-/*===============================STYLES====================================*/
+
 /*===============================STYLES====================================*/
