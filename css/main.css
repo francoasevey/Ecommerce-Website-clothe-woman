@@ -1292,6 +1292,17 @@ main > div .heading{
   justify-content: center;
   height: 100%;
 }
+.data-popup .data-content{
+  position: relative;
+  background-color: var(--white-color);
+  padding: 40px 20px;
+  width: var(--data-width, 400px);
+  max-width: calc(100vw - 50px);
+  max-height: calc(100vh - 60px);
+  border-radius: 5px;
+  overflow-y: auto;
+  pointer-events: e;
+}
 /*===============================STYLES====================================*/
 /*===============================MEDIAS====================================*/
 
