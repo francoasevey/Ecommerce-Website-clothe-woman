@@ -196,7 +196,7 @@ h4{
 .dot-title a:hover, .dotgrid .product-price .before{
   color: var(--light-color);
 }
-.overlay, .mobile-menu, .data-popup{
+.overlay, .mobile-menu, .data-popup, .cart-menu{
   position: fixed;
   top: 0;
   left: 0;
