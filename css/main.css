@@ -169,8 +169,15 @@ input.checker::after{
   width: 10px;
   height: 10px;
   background-color: var(--dark-color);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0);
   border-radius: 50%;
+  transition: var(--transition-transform);
+}
+input.checker:checked::before{
+  border-color: var(--dark-color);
+}
+input.checker:checked::after{
+  transform: translate(-50%, -50%) scale(1);
 }
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
@@ -1571,6 +1578,9 @@ form .button button, .d-review .stars label{
 .cart-footer .button .secondary-btn:hover{
   background-color: var(--grey-color);
   color: var(--white-color);
+}
+.cart-menu .product-list > .wrapper{
+  max-height: 400px;
 }
 /*===============================MEDIAS====================================*/
 
