@@ -1341,6 +1341,15 @@ main > div .heading{
 .data-popup .media-share{
   margin-top: 20px;
 }
+.data-popup form > div{
+  margin-top: 20px;
+}
+form .button button{
+  cursor: pointer;
+}
+.data-popup h3, form .button{
+  text-align: center;
+}
 /*===============================STYLES====================================*/
 /*===============================MEDIAS====================================*/
 
