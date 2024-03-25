@@ -1301,7 +1301,45 @@ main > div .heading{
   max-height: calc(100vh - 60px);
   border-radius: 5px;
   overflow-y: auto;
-  pointer-events: e;
+  pointer-events: auto;
+}
+.data-popup .close-trigger, .data-popup .form span{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+.data-popup .form{
+  position: relative;
+}
+.data-popup label{
+  font-weight: var(--fw600);
+  font-size: var(--fs14);
+  margin-bottom: 10px;
+  display: block;
+}
+.data-popup .form input{
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  border: 0;
+  padding: 7px 34px 7px 10px;
+  border-radius: 3px;
+  font-size: var(--fs14);
+}
+.data-popup .form span{
+  top: auto;
+  bottom: 0;
+  right: 10px;
+  cursor: pointer;
+  transition: var(--transition-color);
+}
+.data-popup .form span:hover{
+  color: var(--grey-color);
+}
+.data-popup .media-share{
+  margin-top: 20px;
 }
 /*===============================STYLES====================================*/
 /*===============================MEDIAS====================================*/
