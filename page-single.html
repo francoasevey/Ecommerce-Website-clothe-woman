@@ -358,11 +358,11 @@
                           </a>
                         </li>
                         <li>
-                          <a href=""><i class="ri-share-forward-line"></i><span>Share</span>
+                          <a href="#0" trigger-button data-target="data-share"><i class="ri-share-forward-line"></i><span>Share</span>
                           </a>
                         </li>
                         <li>
-                          <a href=""><i class="ri-question-line"></i><span>Ask Question</span>
+                          <a href="#0" trigger-button data-target="data-question"><i class="ri-question-line"></i><span>Ask Question</span>
                           </a>
                         </li>
                       </ul>
@@ -440,7 +440,7 @@
                         <span>3 reviews</span>
                       </div>
                       <div class="button">
-                        <a href="" class="primary-btn">Write a review</a>
+                        <a href="#0" class="primary-btn" trigger-button data-target="data-review">Write a review</a>
                       </div>
                     </div>
                     <div class="body-review">
@@ -900,11 +900,11 @@
       </div>
     </div>
   </div>
-<!--
+
   <div id="data-share" class="data-popup d-share">
     <div class="wrap">
       <div class="data-content">
-        <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+        <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
         <div class="form">
           <label>Copy link</label>
           <input type="text" disabled value="https://youtube.com">
@@ -923,11 +923,11 @@
       </div>
     </div>
   </div>
--->
-<!-- <div id="data-question" class="data-popup d-question">
+
+<div id="data-question" class="data-popup d-question">
   <div class="wrap">
     <div class="data-content">
-      <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+      <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
       <h3>The Question</h3>
       <form action="">
         <div><input type="text" placeholder="Name"></div>
@@ -939,13 +939,13 @@
       </form>
     </div>
   </div>
-</div> -->
+</div>
 
 
   <div id="data-review" class="data-popup d-review">
     <div class="wrap">
       <div class="data-content">
-        <a href="" class="close-trigger"><i class="ri-close-line"></i></a>
+        <a href="#0" class="close-trigger" close-button><i class="ri-close-line"></i></a>
         <h3>Write a Review</h3>
         <form action="">
           <div class="dotgrid">
@@ -969,6 +969,11 @@
               <label for="star1"><i class="ri-star-fill"></i></label>
             </div>
           </div>
+          <div><input type="text" placeholder="Review title"></div>
+          <div><textarea placeholder="Your review is..." id="" cols="30" rows="5"></textarea></div>
+          <div class="button">
+          <button type="submit" class="secondary-btn">Submit</button>
+        </div>
         </form>
       </div>
     </div>
