@@ -136,8 +136,41 @@ h4{
 .title{
   font-size: clamp(30px, -0.875em + 8.333vw, var(--fs-max, 40px));
 }
-.grey-color{
+.grey-link{
+  color: inherit;
+  transition: var(--transition-color);
+}
+.grey-color, .grey-link:hover{
   color: var(--grey-color);
+}
+input.checker{
+  position: relative;
+  padding: 5px;
+  margin: 0 5px 0 2px;
+  cursor: pointer;
+}
+input.checker::after, input.checker::before{
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+input.checker::before{
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, -50%);
+  background-color: var(--white-color);
+  border: 1px solid var(--grey-color);
+  border-radius: 50%;
+  transition: var(--transition-border);
+}
+input.checker::after{
+  width: 10px;
+  height: 10px;
+  background-color: var(--dark-color);
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
 }
 /*================================GROUP SELECTOR==================================*/
 .item-floating, .header-center .branding{
@@ -1512,6 +1545,32 @@ form .button button, .d-review .stars label{
 }
 .cart-footer .math-pricing ul ul li:not(:first-child){
   padding-left: 20px;
+}
+.cart-footer .math-pricing .total{
+  font-size: 18px;
+  font-weight: var(--fw600);
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid var(--light-color);
+}
+.cart-footer .button{
+  text-align: center;
+}
+.cart-footer .button .secondary-btn{
+  display: block;
+  margin: 20px 0 10px;
+}
+.cart-footer .button .secondary-btn{
+  background-color: var(--primary-color);
+  border: 0;
+  text-transform: capitalize;
+  line-height: 54px;
+  border-radius: 7px;
+  min-width: 240px;
+}
+.cart-footer .button .secondary-btn:hover{
+  background-color: var(--grey-color);
+  color: var(--white-color);
 }
 /*===============================MEDIAS====================================*/
 
