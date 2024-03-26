@@ -1582,6 +1582,36 @@ form .button button, .d-review .stars label{
 .cart-menu .product-list > .wrapper{
   max-height: 400px;
 }
+/*===============================CATEGORY====================================*/
+.sidebar-title{
+  font-size: 26px;
+}
+.sidebar .widget{
+  margin: 20px 0;
+}
+.sidebar label{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.sidebar label span{
+  font-weight: var(--fw600);
+}
+.sidebar label i{
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sidebar .list-block ul{
+  padding-left: 15px;
+  margin-top: 20px;
+  height: 230px;
+}
+/*===============================MEDIAS====================================*/
+/*===============================MEDIAS====================================*/
 /*===============================MEDIAS====================================*/
 
 @media (min-width: 481px) {
@@ -1629,7 +1659,8 @@ form .button button, .d-review .stars label{
   }
 }
 @media (min-width: 992px) {
-  .menu-trigger{
+  .menu-trigger,
+  .sidebar .close-trigger{
     display: none;
   }
   .header-center nav{
@@ -1693,7 +1724,7 @@ form .button button, .d-review .stars label{
   .slider .button a:hover{
     border-color: var(--dark-color);
   }
-  .scrollto .wrapper{
+  .scrollto .wrapper:not(.initial){
     --display: grid;
     padding: 0;
     overflow: unset;
