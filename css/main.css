@@ -1605,10 +1605,35 @@ form .button button, .d-review .stars label{
   align-items: center;
   justify-content: center;
 }
-.sidebar .list-block ul{
+.sidebar .list-block ul {
   padding-left: 15px;
   margin-top: 20px;
   height: 230px;
+}
+input[type="range"]{
+  -webkit-appearance: none;
+  width: 100%;
+}
+input[type="range"]:focus{
+  outline: none;
+}
+input[type="range"]::-webkit-slider-runnable-track{
+  width: 100%;
+  height: 5px;
+  cursor: pointer;
+  background-color: var(--light-color);
+  box-shadow: none;
+  border: 0;
+}
+input[type="range"]::-webkit-scrollbar-thumb{
+  z-index: 2;
+  position: relative;
+  height: 18px;
+  width: 14px;
+  background-color: var(--grey-color);
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -7px;
 }
 /*===============================MEDIAS====================================*/
 /*===============================MEDIAS====================================*/
