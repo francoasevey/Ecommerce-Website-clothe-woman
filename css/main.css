@@ -236,7 +236,7 @@ input.checker:checked::after{
 .dot-title a:hover, .dotgrid .product-price .before{
   color: var(--light-color);
 }
-.overlay, .mobile-menu, .data-popup, .cart-menu{
+.overlay, .mobile-menu, .data-popup, .cart-menu, .sidebar{
   position: fixed;
   top: 0;
   left: 0;
@@ -492,17 +492,17 @@ form :where(input, textarea, select)::placeholder{
   display: block;
 }
 /*===============================MOBILE====================================*/
-.mobile-menu, .cart-menu{
+.mobile-menu, .cart-menu, .sidebar{
   z-index: 1001;
   pointer-events: none;
   visibility: hidden;
   opacity: 0;
 }
-.mobile-menu.active, .cart-menu.active{
+.mobile-menu.active, .cart-menu.active, .sidebar.active{
   visibility: visible;
   opacity: 1;
 }
-.mobile-menu .wrap, .cart-menu .wrap{
+.mobile-menu .wrap, .cart-menu .wrap, .sidebar > .wrap{
   position: relative;
   max-width: calc(100% - 40px);
   width: 360px;
@@ -512,10 +512,10 @@ form :where(input, textarea, select)::placeholder{
   transform: translateX(var(--transX, -100%));
   transition: var(--transition-transform);
 }
-.mobile-menu.active .wrap, .cart-menu.active .wrap{
+.mobile-menu.active .wrap, .cart-menu.active .wrap, .sidebar.active > .wrap{
   transform: translateX(0);
 }
-.mobile-menu .close-trigger, .mobile-menu .child-trigger, .cart-menu .close-trigger{
+.mobile-menu .close-trigger, .mobile-menu .child-trigger, .cart-menu .close-trigger, .sidebar .close-trigger{
   position: absolute;
   top: 0;
   right: -40px;
@@ -526,7 +526,7 @@ form :where(input, textarea, select)::placeholder{
   align-items: center;
   justify-content: center;
 }
-.mobile-menu .main-menu, .cart-menu .cart-list{
+.mobile-menu .main-menu, .cart-menu .cart-list, .sidebar-content{
   height: 100%;
   padding: 0 20px;
   display: flex;
@@ -1585,6 +1585,7 @@ form .button button, .d-review .stars label{
 /*===============================CATEGORY====================================*/
 .sidebar-title{
   font-size: 26px;
+  padding-top: 100px;
 }
 .sidebar .widget{
   margin: 20px 0;
@@ -1715,6 +1716,9 @@ input[type="range"]::-webkit-slider-thumb{
 }
 .category-content .left span{
   display: none;
+}
+.category-content .dotgrid .wrapper{
+  --grid-col: 221px;
 }
 /*===============================MEDIAS====================================*/
 /*===============================MEDIAS====================================*/
@@ -1850,6 +1854,12 @@ input[type="range"]::-webkit-slider-thumb{
     display: grid;
     grid-template-columns: 1fr 4fr;
     gap: 60px;
+  }
+  .sidebar-title, .sidebar-content{
+    padding: 0;
+  }
+  .sidebar, .sidebar > .wrap{
+    all: unset;
   }
 }
 @media (max-width: 480px) {
