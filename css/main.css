@@ -257,7 +257,7 @@ input.checker:checked::after{
   pointer-events: all;
 }
 .scrollto > .wrapper{
-  display: flex;
+  --display: flex;
   padding-bottom: 20px;
   overflow-x: auto;
   overscroll-behavior-inline: contain;
@@ -1589,7 +1589,7 @@ form .button button, .d-review .stars label{
 .sidebar .widget{
   margin: 20px 0;
 }
-.sidebar label{
+.sidebar label, .sidebar .price-range{
   display: flex;
   justify-content: space-between;
   cursor: pointer;
@@ -1611,7 +1611,7 @@ form .button button, .d-review .stars label{
   height: 230px;
 }
 input[type="range"]{
-  -webkit-appearance: none;
+  appearance: none;
   width: 100%;
 }
 input[type="range"]:focus{
@@ -1625,7 +1625,7 @@ input[type="range"]::-webkit-slider-runnable-track{
   box-shadow: none;
   border: 0;
 }
-input[type="range"]::-webkit-scrollbar-thumb{
+input[type="range"]::-webkit-slider-thumb{
   z-index: 2;
   position: relative;
   height: 18px;
@@ -1634,6 +1634,9 @@ input[type="range"]::-webkit-scrollbar-thumb{
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -7px;
+}
+.sidebar .price-range{
+  font-size: 18px;
 }
 /*===============================MEDIAS====================================*/
 /*===============================MEDIAS====================================*/
