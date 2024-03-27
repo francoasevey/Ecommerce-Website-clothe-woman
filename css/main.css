@@ -332,7 +332,7 @@ input.checker:checked::after{
 .list-inline a:hover, .menu-trigger:hover{
   color: var(--light-color);
 }
-.header-left .list-inline{
+.header-left .list-inline, .sidebar .widget input[type="checkbox"]{
   display: none;
 }
 :where(.header-left, .header-right) li{
@@ -1604,6 +1604,7 @@ form .button button, .d-review .stars label{
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: var(--transition-transform);
 }
 .sidebar .list-block ul {
   padding-left: 15px;
@@ -1637,6 +1638,25 @@ input[type="range"]::-webkit-slider-thumb{
 }
 .sidebar .price-range{
   font-size: 18px;
+}
+.sidebar .widget .accord{
+  padding-right: 15px;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all .3s ease;
+}
+.sidebar .widget input:checked ~ div{
+  max-height: 1000px;
+  opacity: 1;
+  visibility: visible;
+}
+.sidebar .widget input:checked ~ label i{
+  transform: rotate(180deg);
+}
+.sidebar .widget :where(.accord > div, .range-track){
+  padding-top: 20px;
 }
 /*===============================MEDIAS====================================*/
 /*===============================MEDIAS====================================*/
